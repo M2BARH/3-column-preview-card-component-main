@@ -1,0 +1,143 @@
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+@import url('https://fonts.google.com/specimen/Big+Shoulders+Display');
+
+:root {
+	--bright-orange: hsl(31, 77%, 52%);--dark-cyan: hsl(184, 100%, 22%);
+	--very-dark-cyan: hsl(179, 100%, 13%);
+	/* paragraphs */
+	--transparent-white: hsla(0, 0%, 100%, 0.75);
+	/* background, headings, buttons */
+	--very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 15px;
+	font-family: sans-serif;
+}
+.container {
+	display: grid;
+	place-items: center;
+	height: 80vh;
+	background-color: var(--very-light-gray);
+}
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 822px;
+	height: 80%;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+.three-col {
+	width: calc(100% / 3);
+	height: 100%;
+	padding: 5%;
+}
+#sedan {
+	background-color: var(--bright-orange);
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+#suv {
+	background-color: var(--dark-cyan);
+}
+#luxury {
+	background-color: var(--very-dark-cyan);
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+.car-type {
+	margin-top: 20px;
+}
+h1 {
+	color: var(--very-light-gray);
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.banners {
+	margin-top: 20px;
+}
+.btn {
+	margin-top: 30px;
+	background-color: var(--very-light-gray);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 30px;
+	border-radius: 20px;
+}
+.btn a {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+#lnk1 {
+	color: var(--bright-orange);
+}
+#lnk2 {
+	color: var(--dark-cyan);
+}
+#lnk3 {
+	color: var(--very-dark-cyan);
+}
+.btn:hover, .btn:focus {
+	border: 2px solid var(--very-light-gray) ;
+}
+#lnk1:hover {
+	color: var(--very-light-gray);
+}
+#lnk2:hover {
+	color: var(--very-light-gray);
+}
+#lnk3:hover {
+	color: var(--very-light-gray);
+}
+#btn1:hover {
+	background-color: var(--bright-orange);
+}
+#btn2:hover {
+	background-color: var(--dark-cyan);
+}
+#btn3:hover {
+	background-color: var(--very-dark-cyan);
+}
+@media only screen and (max-width:375px) {
+	.container {
+		height: 320vh;
+		justify-content: center;
+	}
+	.center {
+		flex-direction: column;
+	}
+	#sedan {
+		border-top-left-radius: 6px;
+		border-top-right-radius: 6px;
+		border-bottom-left-radius: 0px;
+	}
+	#luxury {
+		border-bottom-left-radius: 6px;
+		border-bottom-right-radius: 6px;
+		border-top-right-radius: 0px;
+	}
+	.attribution {
+		font-size: small;
+	}
+	.attribution a {
+		font-size: small;
+	}
+}
+
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
